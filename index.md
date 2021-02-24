@@ -27,7 +27,7 @@ saul@DESKTOP-F06QRH9:~$ sudo snap install code --classic
 Se ha instalado code 622cb03f por Visual Studio Code (vscode✓)
 ```
 
-### Configuración de VSC para conectarse a una máquina remota por SSH
+### --> Configuración de VSC para conectarse a una máquina remota por SSH
 
 Lo siguiente será conseguir realizar una conexión remota por `ssh` entre VSC y nuestra máquina virtual. Para ello primeramente, debemos establecer una conexión hacia nuestra máquina virtual, antes de nada, lo primero es aseguarnos de qu estamos conectados a la VPN de la ULL.
 
@@ -39,7 +39,7 @@ usuario@10.6.129.123's password:
 Una vez dentro, abrimos en local una ventana de VSC. Si pulsamos `F1` y tecleamos `ssh`, vemos que no nos aparece la opción `SSH-Remote: Connect to host`, por ello nos dirigiremos hacia la sección de extensiones y tendremos que instalar la  extensión [SSH-Remote](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) que nos permitirá usar una máquina remota con un **servidor SSH** como entorno de desarrollo.
 
 Una vez instalada, podemos volver continuar. Pulsamos `F1` y volvemos a teclear `ssh`, esta vez entre las opciones vemos como si que aparece `SSH-Remote: Connect to host`, pinchamos y se nos despliega un pequeño menú donde puede aparecer el nombre del host de máquinas que ya tengamos asignadas si es que hemos utilizado esta herramienta con anterioridad y además otras como `Add New SSH Host...` y `Configure SSH Hosts...`.
-Si la configuración realizada en el informe anterior sobre el fichero `~/.ssh/config` fue realizada con éxito, debería de aparecer el nombre del host directamente, de no ser el caso, como me ocurre a mí, podemos acceder a `Configure SSH Hosts...` y desde aquí movernos hacia `(AÑADIR RUTA).
+Si la configuración realizada en el informe anterior sobre el fichero `~/.ssh/config` fue realizada con éxito, debería de aparecer el nombre del host directamente, de no ser el caso, como me ocurre a mí, podemos acceder a `Configure SSH Hosts...` y desde aquí movernos hacia `(AÑADIR RUTA)`.
 ```
 Host DSI-30
   HostName DSI-30
@@ -47,6 +47,10 @@ Host DSI-30
 ```
 Guardamos, y ahora si volvemos a seguir con los pasos descritos anteriormente, al acceder a `SSH-Remote: Connect to host` podemos ver como sale el nombre de nuestro host, en mi caso, `DSI-30`.
 
+
+### --> Sesiones colaborativas con Visual Studio Live Share
+
+Una de las muchas extensiones que tiene VSC es [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) que nos permite realizar sesiones colaborativas con otros usuarios en tiempo real.
 
 
 
