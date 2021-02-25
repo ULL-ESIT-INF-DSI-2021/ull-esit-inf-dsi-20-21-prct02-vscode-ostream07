@@ -52,7 +52,7 @@ Guardamos, y ahora si volvemos a seguir con los pasos descritos anteriormente, a
 
 Una de las muchas extensiones que tiene VSC es [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) que nos permite realizar sesiones colaborativas con otros usuarios en tiempo real.
 
-Para el desarrollo de las próximas prácticas, será conveniente tener el editor `Vi/Vim` así como la extensión [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Si no tenemos instalado ESLint de forma local o global, podemos hacerlo ejecutando `npm install eslinten` sobre la carpeta del área de trabajo para una instalación local o podemos ejecutar `npm install -g eslint` para una instalación global.
+Para el desarrollo de las próximas prácticas, será conveniente tener el editor `Vi/Vim` así como la extensión [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint). Si no tenemos instalado ESLint de forma local o global, podemos hacerlo ejecutando `npm install eslint` sobre la carpeta del área de trabajo para una instalación local o podemos ejecutar `npm install -g eslint` para una instalación global.
 
 ```
 [~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07(desarrollo)]$npm install -g eslint
@@ -61,7 +61,7 @@ added 110 packages, and audited 111 packages in 11s
 
 13 packages are looking for funding
   run `npm fund` for details
-  
+
 found 0 vulnerabilities
 npm notice 
 npm notice New patch version of npm available! 7.5.3 -> 7.5.6
