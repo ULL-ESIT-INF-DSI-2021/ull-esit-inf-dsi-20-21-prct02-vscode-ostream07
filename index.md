@@ -61,8 +61,7 @@ added 110 packages, and audited 111 packages in 11s
 
 13 packages are looking for funding
   run `npm fund` for details
-<<<<<<< HEAD
-
+  
 found 0 vulnerabilities
 npm notice 
 npm notice New patch version of npm available! 7.5.3 -> 7.5.6
