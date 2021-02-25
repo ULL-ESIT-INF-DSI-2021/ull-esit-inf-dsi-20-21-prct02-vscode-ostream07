@@ -178,3 +178,16 @@ Vemos que se crea automáticamente el directorio `dist` y dentro de él un fiche
 
 En teoría, solo tendría que haber salido una, la declaración de la variable **myString**, pero en mi fichero `index.js`, había una tercera línea vacía, al eliminarla y volver a ejecutar, todo sale satisfactoriamente:
 
+```
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$diff src/index.ts dist/index.js 
+1c1
+< let myString: string = "Hola Mundo";
+---
+> let myString = "Hola Mundo";
+```
+
+Para finalizar, podemos probar el código JavaScript generado a partir del código TypeScript mediante el siguiente comando:
+
+```
+
+```
