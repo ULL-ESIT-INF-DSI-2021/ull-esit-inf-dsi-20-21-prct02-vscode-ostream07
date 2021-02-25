@@ -61,6 +61,7 @@ added 110 packages, and audited 111 packages in 11s
 
 13 packages are looking for funding
   run `npm fund` for details
+<<<<<<< HEAD
 
 found 0 vulnerabilities
 npm notice 
@@ -142,4 +143,53 @@ Con estas opciones de configuración queremos indicarle al compilador de TypeScr
 3. Especificamos que el código fuente escrito en TypeScript se encuentra en el directorio `src`.
 4. Indicamos un estándar para cargar código desde ficheros independientes.
 
+Creamos el directorio `src` y también un fichero llamado `index.ts`
+```
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$mkdir src
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$ls
+package.json  src  tsconfi.json
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$cd src/
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world/src(desarrollo)]$touch index.ts
+```
+A continuación vamos a realizar un *hola mundo*, para ello primero debemos escribir las siguientes líneas de código en el fichero que acabamos de crear, guardar los cambios y acto seguido, ejecutar con `tsc`.
+```
+let myString: string = "Hola Mundo";
+console.log(myString);
+```
 
+En mi caso, en la primera palabra de la priemra línea, **let**, aparece subrayada y con el siguiente mensaje eal situal el ratón sobre ella.
+
+`ESLint is disabled since its execution has not been approved or denied yet. Use the light bulb menu to open the approval dialog.eslint`
+
+En la esquina inferior derecha de el VSC, en la banda azul, aparece **ESLINT** con un signo de prohibido, pulsamos y seleccionamos **Allow**.
+
+Ahora si, podemos ejecutar 
+
+Vemos que se crea automáticamente el directorio `dist` y dentro de él un fichero llamado `index.js`. Vamos a compararlos para ver si hay diferencias entre ellos:
+```
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$diff src/index.ts dist/index.js 
+1,2c1,2
+< let myString: string = "Hola Mundo";
+< console.log(myString);
+\ No hay ningún carácter de nueva línea al final del archivo
+---
+> let myString = "Hola Mundo";
+> console.log(myString);
+```
+
+En teoría, solo tendría que haber salido una, la declaración de la variable **myString**, pero en mi fichero `index.js`, había una tercera línea vacía, al eliminarla y volver a ejecutar, todo sale satisfactoriamente:
+
+```
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$diff src/index.ts dist/index.js 
+1c1
+< let myString: string = "Hola Mundo";
+---
+> let myString = "Hola Mundo";
+```
+
+Para finalizar, podemos probar el código JavaScript generado a partir del código TypeScript mediante el siguiente comando:
+
+```
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$node dist/index.js
+Hola Mundo
+```
