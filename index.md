@@ -189,5 +189,6 @@ En teoría, solo tendría que haber salido una, la declaración de la variable *
 Para finalizar, podemos probar el código JavaScript generado a partir del código TypeScript mediante el siguiente comando:
 
 ```
-
+[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$node dist/index.js
+Hola Mundo
 ```
