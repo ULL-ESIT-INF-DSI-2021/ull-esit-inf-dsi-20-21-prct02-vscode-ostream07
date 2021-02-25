@@ -124,7 +124,7 @@ drwxrwxr-x 2 usuario usuario 4,0K feb 25 17:47 .
 Para más información sobre el comando `ls` y sus opciones puede consultar el manual con `man ls`, tamién hay varios recursos que podemos consultar por internet como [este](https://es.wikipedia.org/wiki/Ls).
 
 Dentro de nuestro directorio `hello_world` vamos a crear un nuevo fichero llamado **tsconfig.json** al que le añadiremos en su interior las siguientes líneas:
-````
+```
 {
   "compilerOptions": {
     "target": "ES2018",
@@ -137,12 +137,9 @@ Dentro de nuestro directorio `hello_world` vamos a crear un nuevo fichero llamad
 
 Con estas opciones de configuración queremos indicarle al compilador de TypeScript una serie de datos:
 
-1. Queremos generar código compatible con el estándar ES2018` de JavaScript. 
-2. El código JavaScript producto de la compilación se almacenará en un directorio /dist. 
-3. Especificamos que el código fuente escrito en TypeScript se encuentra en el directorio src.
+1. Queremos generar código compatible con el estándar **ES2018** de JavaScript. 
+2. El código JavaScript producto de la compilación se almacenará en un directorio `/dist`. 
+3. Especificamos que el código fuente escrito en TypeScript se encuentra en el directorio `src`.
 4. Indicamos un estándar para cargar código desde ficheros independientes.
-
-
-
 
 
