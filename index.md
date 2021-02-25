@@ -142,7 +142,7 @@ Con estas opciones de configuración queremos indicarle al compilador de TypeScr
 3. Especificamos que el código fuente escrito en TypeScript se encuentra en el directorio `src`.
 4. Indicamos un estándar para cargar código desde ficheros independientes.
 
-Creamos el directorio ``src` y también un fichero llamado `ìndex.ts`
+Creamos el directorio `src` y también un fichero llamado `index.ts`
 ```
 [~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$mkdir src
 [~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$ls
@@ -150,45 +150,14 @@ package.json  src  tsconfi.json
 [~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$cd src/
 [~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world/src(desarrollo)]$touch index.ts
 ```
-A continuación vamos a relaizar un **hola mundo*, para ello primero debemos escribir las siguientes líneas de código en el fichero que acabamos de crear, guardar los cambios y acto seguido, ejecutar con ``tsp`.
+A continuación vamos a realizar un *hola mundo*, para ello primero debemos escribir las siguientes líneas de código en el fichero que acabamos de crear, guardar los cambios y acto seguido, ejecutar con `tsc`.
 ```
 let myString: string = "Hola Mundo";
 console.log(myString);
 ```
 
 ```
-[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world/src(desarrollo)]$tsp
 
-No se ha encontrado la orden «tsp», pero se puede instalar con:
-
-sudo apt install task-spooler
-```
-Debemos instalar el paquete para poder usar la orden:
-```
-[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world/src(desarrollo)]$sudo apt install task-spooler
-[sudo] contraseña para usuario: 
-Leyendo lista de paquetes... Hecho
-Creando árbol de dependencias       
-Leyendo la información de estado... Hecho
-Se instalarán los siguientes paquetes NUEVOS:
-  task-spooler
-0 actualizados, 1 nuevos se instalarán, 0 para eliminar y 18 no actualizados.
-Se necesita descargar 33,4 kB de archivos.
-Se utilizarán 87,0 kB de espacio de disco adicional después de esta operación.
-Des:1 http://es.archive.ubuntu.com/ubuntu bionic/universe amd64 task-spooler amd64 1.0-1 [33,4 kB]
-Descargados 33,4 kB en 1s (59,3 kB/s)
-Seleccionando el paquete task-spooler previamente no seleccionado.
-(Leyendo la base de datos ... 121002 ficheros o directorios instalados actualmente.)
-Preparando para desempaquetar .../task-spooler_1.0-1_amd64.deb ...
-Desempaquetando task-spooler (1.0-1) ...
-Configurando task-spooler (1.0-1) ...
-Procesando disparadores para man-db (2.8.3-2ubuntu0.1) ...
-```
-
-```
-[~/practica2/ull-esit-inf-dsi-20-21-prct02-vscode-ostream07/hello_world(desarrollo)]$tsp
-ID   State      Output               E-Level  Times(r/u/s)   Command [run=0/1]
-```
 En mi caso, en la primera palabra de la priemra línea, **let**, aparece subrayada y con el siguiente mensaje eal situal el ratón sobre ella.
 ```
 ESLint is disabled since its execution has not been approved or denied yet. Use the light bulb menu to open the approval dialog.eslint
